@@ -9,6 +9,12 @@ import Navbar from './Components/Navbar.jsx';
 import useAuthUser from './Hooks/useAuthUser.js';
 import Layout from './Components/Layout.jsx';
 import Loader from './Components/Loader.jsx'
+import Events from './pages/Events.jsx';
+import Students from './pages/Students.jsx';
+import Alumins from './pages/Alumnis.jsx';
+import Management from './pages/Management.jsx';
+import Admins from './pages/Admins.jsx';
+
 
 function App() {
   const { authUser, isLoading } = useAuthUser();
@@ -54,6 +60,12 @@ function App() {
           
           <Route index element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="events" element={<Events />} />
+          <Route path="students" element={<Students />} />
+          <Route path="alumins" element={<Alumins />} />
+          <Route path="profile-management" element={<Management />} />
+          <Route path="alumins" element={<Alumins />} />
+          <Route path="admins" element={<Admins />} />
 
         </Route>
       </Routes>

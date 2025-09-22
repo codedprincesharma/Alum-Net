@@ -9,6 +9,7 @@ import alumni from '../assets/alumni.png'
 import settings from '../assets/Settings.svg';
 import orders from '../assets/order.svg';
 import Logout from './Logout'; 
+import Events from  "../assets/Events.svg"
 import logoutIcon from '../assets/logout.svg'; // Add an icon for logout
 
 function Layout() {
@@ -16,7 +17,7 @@ function Layout() {
 
   const sidebarOpt = [
     { to: "/dashboard", text: "DashBoard", img: dash },
-    { to: "/events", text: "Events", img: product },
+    { to: "/events", text: "Events", img: Events },
     { to: "/profile-management", text: "Mangement", img: orders },
     { to: "/students", text: "Students", img: Students },
     { to: "/alumins", text: "Alumni", img: alumni },
